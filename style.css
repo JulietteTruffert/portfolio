@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
   font-family: 'JetBrains Mono', monospace;
   /* background: linear-gradient(to bottom, #2647AB, #A82BC5, #78148E); */
@@ -8,6 +12,9 @@ body {
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
 }
 
 main {
@@ -18,14 +25,17 @@ main {
     gap: 300px;
 }
 
-nav ul li {
+nav ul li a {
     font-size: 24px;
+    color: black;
     /* background-color: yellow; */
-    margin: 10px 0px 10px 0px;
+    margin: 15px 0px 15px 0px;
+    text-decoration: none;
+
     /* padding: 10px; */
 }
 
-nav ul li:hover{
+nav ul li a:hover{
     color:aqua
 }
 
@@ -48,10 +58,16 @@ nav ul {
 nav {
     background-color: rgba(255, 255, 255, 0.2);
     /* width: 500px; */
-    /* justify-content: center; */
     width: 744px;
     margin: auto;
     border-radius: 30px;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    top: 15px;
     /* margin: auto; */
     /* display: inline-block; */
 
@@ -76,7 +92,7 @@ nav {
     width: 886px;
     margin: auto;
     position: relative;
-    margin-top: 300px;
+    margin-top: 200px;
     /* top: 365px; */
 }
 
@@ -111,6 +127,7 @@ h1 {
     text-align: center;
     position: relative;
     margin-bottom: 70px;
+    scroll-margin-top: 100px;
     /* justify-content: center; */
 
 }
