@@ -10,6 +10,14 @@ body {
   min-height: 100vh;
 }
 
+main {
+    /* background-color: red; */
+    /* width: 100vw; */
+    display: flex;
+    flex-direction: column;
+    gap: 300px;
+}
+
 nav ul li {
     font-size: 24px;
     /* background-color: yellow; */
@@ -26,9 +34,11 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
+    flex-direction: row;
     gap: 60px;
     /* margin: 22px; */
     justify-content: center;
+    /* align-content: center; */
     /* background-color: blueviolet; */
     /* background-color: rgba(255, 255, 255, 0.2); */
     /* box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.1); */
@@ -47,3 +57,134 @@ nav {
 
     /* margin: 10px; */
 }
+
+.photo-juliette {
+    width: 345px;
+    height: auto;
+    border-radius: 37px;
+    /* display: block; */
+    /* margin: 0 auto; */
+    /* width: 50%; */
+    /* position: absolute; */
+    /* top: 365px;
+    left: 245px; */
+}
+
+.presentation {
+    /* background-color: blue; */
+    display: flex;
+    width: 886px;
+    margin: auto;
+    position: relative;
+    margin-top: 300px;
+    /* top: 365px; */
+}
+
+
+.presentation div h2 {
+    font-size: 40px;
+}
+
+.presentation div p {
+    font-size: 24px;
+}
+
+.presentation div {
+    /* top: 83px; */
+    /* background-color: red; */
+    padding-top: 50px;
+    padding-left: 50px;
+}
+
+.offer{
+    /* background-color: green; */
+    /* position: relative; */
+    /* top: 0px; */
+}
+
+h1 {
+    font-size: 52px;
+    width: 558px;
+    margin: auto;
+    /* top: 1354px; */
+    /* background-color: #a22ebf; */
+    text-align: center;
+    position: relative;
+    margin-bottom: 70px;
+    /* justify-content: center; */
+
+}
+
+
+
+.card {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 377px;
+    height: 475px;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 39px;
+}
+
+.card p {
+    font-size: 26px;
+    text-align: center;
+}
+
+.card img {
+    width: 248px;
+    display: relative;
+    margin: auto;
+    clip-path: inset(0 0 20% 0);
+}
+
+.tools div {
+    display: flex;
+    direction: row;
+    /* width: 90%; */
+    gap: 45px;
+    flex-wrap: wrap;
+    /* background-color: #2ebf91; */
+    justify-content: center;
+}
+
+.tools div img {
+    height: 70px;
+}
+
+.cards-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(593px, 1fr));
+    gap: 20px;
+    max-width: 1206px;
+    margin: auto;
+    justify-items: center;
+    /* place-content: center; */
+}
+
+.card-1 {
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 593px;
+    height: 369px;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-1 p {
+    /* background-color: #2ebf91; */
+    width : 473px;
+}
+
+.card-1 img {
+    width: 473px;
+}
+
