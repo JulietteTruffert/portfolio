@@ -145,7 +145,7 @@ h1 {
     clip-path: inset(0 0 20% 0);
 }
 
-.tools div {
+.tools div, .clients div {
     display: flex;
     direction: row;
     /* width: 90%; */
@@ -155,7 +155,7 @@ h1 {
     justify-content: center;
 }
 
-.tools div img {
+.tools div img, .clients div img {
     height: 70px;
 }
 
@@ -188,3 +188,15 @@ h1 {
     width: 473px;
 }
 
+/* .credits {
+    display: flex;
+    justify-content: center;
+} */
+
+.credits h3, .credits div {
+    text-align: center;
+}
+
+footer {
+    height: 200px;
+}
