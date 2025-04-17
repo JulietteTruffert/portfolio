@@ -28,7 +28,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: aqua;
+    /* color: aqua; */
     transform: scale(1.08);
 }
 
@@ -78,13 +78,13 @@ section.visible {
     height: auto;
     border-radius: 37px;
     transition: transform 0.5s ease;
-
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
 
-.photo-juliette:hover {
+/* .photo-juliette:hover {
     transform: scale(1.05);
 
-}
+} */
 
 .presentation {
     display: flex;
@@ -99,19 +99,39 @@ section.visible {
     display: flex;
 }
 
-.presentation div div h2 {
-    font-size: 40px;
+.sidetext h2 {
+    font-size: 40px;    
 }
 
-.presentation div div p {
+.sidetext p {
     font-size: 24px;
 }
 
-.presentation div div{
+.sidetext {
     display: flex;
     flex-direction: column;
     padding-top: 50px;
     padding-left: 50px;
+}
+
+.sidetext .social {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.presentation .social p {
+    width: 200px;
+    font-size: 20px;
+}
+
+.social img {
+    height: 40px;
+}
+
+.social img:hover {
+    transform: scale(1.1);
 }
 
 h1 {
@@ -121,18 +141,19 @@ h1 {
     text-align: center;
     position: relative;
     margin-bottom: 70px;
-    scroll-margin-top: 100px;
+    scroll-margin-top: 200px;
 
 }
 
 .card {
     background-color: rgba(255, 255, 255, 0.2);
     width: 377px;
-    height: 475px;
+    height: 400px;
     border-radius: 45px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
     transition: background 0.5s ease;
 }
 
@@ -140,7 +161,6 @@ h1 {
     background-color: rgba(255, 255, 255, 0.3);
     transition: all 0.3s ease;
     /* transform: translateY(-3px); */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
 }
   
 /* .card:hover {
@@ -217,7 +237,7 @@ h1 {
 }
 
 .card-wrapper:hover .card-1, .card-wrapper:hover .card-1 p, .card-wrapper:hover .card-1 img{
-    opacity: 0.2;
+    opacity: 0.4;
     transform: scale(1.01);
 }
 
