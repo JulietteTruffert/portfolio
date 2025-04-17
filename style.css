@@ -20,15 +20,18 @@ main {
 }
 
 nav ul li a {
+    display: inline-block; 
     font-size: 24px;
     color: black;
-    margin: 15px 0px 15px 0px;
+    margin: 15px 0px;
     text-decoration: none;
 }
 
-nav ul li a:hover{
-    color:aqua
+nav ul li a:hover {
+    color: aqua;
+    transform: scale(1.08);
 }
+
 
 nav ul {
     list-style: none;
@@ -42,8 +45,9 @@ nav ul {
 }
 
 nav {
-    background-color: rgba(255, 255, 255, 0.2);
-    width: 820px;
+    background-color: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    width: 840px;
     height: 50px;
     margin: auto;
     border-radius: 30px;
@@ -133,14 +137,13 @@ h1 {
 }
 
 .card:hover {
-    /* background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); */
-    background-color: rgba(255, 255, 255, 0.4);
-  }
-
-/* .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    background-color: rgba(255, 255, 255, 0.3);
     transition: all 0.3s ease;
+    /* transform: translateY(-3px); */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+  
+/* .card:hover {
 } */
 
 .cards {
@@ -177,7 +180,14 @@ h1 {
 
 .tools div img, .clients div img {
     height: 70px;
+    transition: transform 0.3s ease;
 }
+
+.tools div img:hover, .clients div img:hover{
+    transform: scale(1.2);
+    /* box-shadow: 0 10px 20px rgba(0,0,0,0.2); */
+}
+
 
 .cards-1 {
     display: grid;
