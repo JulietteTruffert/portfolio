@@ -198,6 +198,12 @@ h1 {
     justify-items: center;
 }
 
+.card-wrapper {
+    position: relative;
+    width: 593px;
+    height: 369px;
+}
+
 .card-1 {
     background-color: rgba(255, 255, 255, 0.2);
     width: 593px;
@@ -206,6 +212,32 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.card-wrapper:hover .card-1, .card-wrapper:hover .card-1 p, .card-wrapper:hover .card-1 img{
+    opacity: 0.2;
+    transform: scale(1.01);
+}
+
+.card-1-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255, 0.2);
+    width: 593px;
+    height: 369px;
+    border-radius: 45px;
+    opacity: 0;
+    transition: transform 0.2s ease;
+}
+
+.card-1-overlay:hover {
+    opacity: 1;
+    transform: scale(1.01);
 }
 
 .card-1 p {
