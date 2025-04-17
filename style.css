@@ -6,20 +6,14 @@ html {
 
 body {
   font-family: 'JetBrains Mono', monospace;
-  /* background: linear-gradient(to bottom, #2647AB, #A82BC5, #78148E); */
   background: linear-gradient(to bottom, #8360c3, #2ebf91);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   min-height: 100vh;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
 }
 
 main {
-    /* background-color: red; */
-    /* width: 100vw; */
     display: flex;
     flex-direction: column;
     gap: 300px;
@@ -28,11 +22,8 @@ main {
 nav ul li a {
     font-size: 24px;
     color: black;
-    /* background-color: yellow; */
     margin: 15px 0px 15px 0px;
     text-decoration: none;
-
-    /* padding: 10px; */
 }
 
 nav ul li a:hover{
@@ -46,19 +37,12 @@ nav ul {
     display: flex;
     flex-direction: row;
     gap: 60px;
-    /* margin: 22px; */
     justify-content: center;
-    /* align-content: center; */
-    /* background-color: blueviolet; */
-    /* background-color: rgba(255, 255, 255, 0.2); */
-    /* box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.1); */
-    /* display: inline-block; */
 }
 
 nav {
     background-color: rgba(255, 255, 255, 0.2);
-    /* width: 500px; */
-    width: 744px;
+    width: 800px;
     margin: auto;
     border-radius: 30px;
     position: fixed;
@@ -68,41 +52,11 @@ nav {
     left: 0;
     right: 0;
     top: 15px;
-    /* margin: auto; */
-    /* display: inline-block; */
-
-    /* margin: 10px; */
-}
-
-.section {
-
-}
-
-.photo-juliette {
-    width: 345px;
-    height: auto;
-    border-radius: 37px;
-    /* display: block; */
-    /* margin: 0 auto; */
-    /* width: 50%; */
-    /* position: absolute; */
-    /* top: 365px;
-    left: 245px; */
-}
-
-.presentation {
-    /* background-color: blue; */
-    display: flex;
-    width: 886px;
-    margin: auto;
-    position: relative;
-    margin-top: 200px;
-    /* top: 365px; */
 }
 
 section {
-    opacity: 0;                         /* Caché au début */
-    transform: translateY(40px);        /* Décalé vers le bas */
+    opacity: 0;                         
+    transform: translateY(40px);        
     transition: 
       opacity 0.8s ease-out, 
       transform 0.8s ease-out;
@@ -113,37 +67,50 @@ section.visible {
     transform: translateY(0);
 }
 
-.presentation div h2 {
-    font-size: 40px;
+.photo-juliette {
+    width: 345px;
+    height: auto;
+    border-radius: 37px;
 }
 
-.presentation div p {
-    font-size: 24px;
+.presentation {
+    display: flex;
+    flex-direction: column;
+    width: 886px;
+    margin: auto;
+    position: relative;
+    margin-top: 200px;
 }
 
 .presentation div {
-    /* top: 83px; */
-    /* background-color: red; */
+    display: flex;
+}
+
+.presentation div div h2 {
+    font-size: 40px;
+}
+
+.presentation div div p {
+    font-size: 24px;
+}
+
+.presentation div div{
+    display: flex;
+    flex-direction: column;
     padding-top: 50px;
     padding-left: 50px;
 }
-
 
 h1 {
     font-size: 52px;
     width: 558px;
     margin: auto;
-    /* top: 1354px; */
-    /* background-color: #a22ebf; */
     text-align: center;
     position: relative;
     margin-bottom: 70px;
     scroll-margin-top: 100px;
-    /* justify-content: center; */
 
 }
-
-
 
 .card {
     background-color: rgba(255, 255, 255, 0.2);
@@ -177,10 +144,8 @@ h1 {
 .tools div, .clients div {
     display: flex;
     direction: row;
-    /* width: 90%; */
     gap: 45px;
     flex-wrap: wrap;
-    /* background-color: #2ebf91; */
     justify-content: center;
 }
 
@@ -195,7 +160,6 @@ h1 {
     max-width: 1206px;
     margin: auto;
     justify-items: center;
-    /* place-content: center; */
 }
 
 .card-1 {
@@ -209,18 +173,12 @@ h1 {
 }
 
 .card-1 p {
-    /* background-color: #2ebf91; */
     width : 473px;
 }
 
 .card-1 img {
     width: 473px;
 }
-
-/* .credits {
-    display: flex;
-    justify-content: center;
-} */
 
 .credits h3, .credits div {
     text-align: center;
